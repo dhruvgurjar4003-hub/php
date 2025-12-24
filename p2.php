@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         function validateForm() {
             let name  = document.forms["myForm"]["name"].value;
             let email = document.forms["myForm"]["email"].value;
+            let mobileno = document.forms["myForm"]["email"].value;
  
             if (name.trim() === "") {
                 alert("Name is required");
@@ -46,6 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <label>Email:</label><br>
     <input type="text" name="email"><br><br>
+    
+    <label> mobile no:</label><br>
+    <input type="text" name="mobile no"><br><br>
 
     <input type="submit" value="Submit">
 </form>
