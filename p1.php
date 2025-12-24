@@ -12,10 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Form Validation Example</title>
     <script>
-        
         function validateForm() {
             let name = document.forms["myForm"]["name"].value;
             let email = document.forms["myForm"]["email"].value;
@@ -33,10 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 alert("Please enter a valid email address");
                 return false;
             }
-            return true; 
+            return true;
         }
     </script>
 </head>
+
 <body>
     <h1>Registration Form</h1>
     <form name="myForm" method="post" action="" onsubmit="return validateForm()">
@@ -49,4 +50,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Submit">
     </form>
 </body>
+
 </html>
